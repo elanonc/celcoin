@@ -159,3 +159,25 @@ public class Ordenacao
 
 ````
 
+### e. Seja o seguinte algoritmo: (0,5)
+````c#
+  Decimal array [] = (5.2, 4.1, 7.5, 8.6);
+  Decimal x = 0;
+    for(int i = 0; i < array.length(); i++)
+    {
+      x = x  + array[i];
+    }
+  Console.write(x / array.length());
+````
+
+### O que esse algoritmo faz?
+
+> R: O algoritmo soma os valores do array, de forma que a soma fique armazenada na variável x.
+> Cada vez que o laço é executado, a variável x recebe o valor do array no index em que está o loop e soma com o valor armazenado nele mesmo.
+> Após a execução do laço completamente, x terá como valor 25.4.
+> Ao fim, o algoritmo imprime a divisão de x pelo tamanho do array, que é 4.
+> 25.4 / 4 = 6.35.
+> Portanto, pode-se afirmar que esse é um algoritmo que calcula a média aritmética dos valores de um array;
+
+
+
