@@ -1,10 +1,7 @@
 <h1 align="center">
-  Teste da Celcoin para Estágio
+  Teste da Celcoin para Estágio<br/>
+  Candidato Elano Nunes
 </h1>
-
-<p align="center">
-  <a href="#-1">🖥️ Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-</p>
 
 
 ## 01. Sequencias -  Continue as sequências: (1,0) 
