@@ -229,9 +229,11 @@ SELECT * FROM PEDIDOS WHERE usuarioid in (
 ![image](https://drive.google.com/uc?export=view&id=16dTnawipFH6_yRxm_NsO4-ip4jRq3LYc)
 
 <p>
-  O primeiro problema evidente é que essa tabela não representa nenhuma entidade efetivamente, mas aparece como uma combinação de 3 entidades que podem ser observadas, sendo elas: Funcionário, Cargo e Projeto. 
-  
-  Isso pode ser afirmado devido aos atributos que são específicos de uma entidade, mas que não tem relação com outra entidade. Por exemplo a “dataFim”, que seria a data do final do projeto, não tem relacionamento com nome do funcionário, sendo assim, poderia ficar em uma tabela separada.
+
+  Primeiramente, a tabela não possui exatamente uma entidade. A tabela possui atributos de 3 outras entidades que pode-se supor que existem nesse MER, que seriam Funcionário, Cargo e Projeto. Uma evidência da baixa qualidade dessa tabela é não há ID da tabela. Além de que também há atributos na tabela que não parecem ter relação com outros atributos presentes, como DataFim, que seria a data do fim do projeto, que não tem relação com o nome do cargo e portanto podem pertencer a tabelas separadas.
+
+  Para melhorar isso, eu separei em 4 tabelas: Funcionário, Cargo, Projeto e Alocação. A tabela alocação possui chaves de cada tabela de forma que as conecta. O restante das tabelas possui apenas atributos que dizem a respeito das entidades.
+
 </p>
 
 
@@ -247,7 +249,7 @@ Tabela Funcionário
 Tabela Cargo
 
 | cargoID | nomeCargo  |
-| :--- | :--- | :--- |
+| :--- | :--- | 
 | 1 | Programador |
 | 2 | Analista |
 | 3 | UI/UX |
@@ -284,6 +286,3 @@ Relacionamentos nesse MER:
 * Um Funcionario tem Alocação
 * Alocação é feita um Projeto
 * Um cargo pertence a um Funcionario
-
-
-
