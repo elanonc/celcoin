@@ -196,8 +196,7 @@ public class Ordenacao
 
 ## 4. O Modelo Entidade Relacionamento (MER) é um modelo conceitual usado para descrever os objetos (entidades) envolvidos em domínios de negócio, com suas características (atributos) e como elas se relacionam entre si (relacionamento). Observe o MER abaixo e responda as questões abaixo. (3,0)
 
-<p align="center">
-  <img alt="Direct Download" src="https://drive.google.com/file/d/1FQfHp6-pQHX0MnamLZD-dd_pjtr47hby/view" />
-</p>
+![image](https://drive.google.com/uc?export=view&id=1FQfHp6-pQHX0MnamLZD-dd_pjtr47hby)
+
 
 
