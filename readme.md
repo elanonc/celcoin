@@ -172,12 +172,32 @@ public class Ordenacao
 
 ### O que esse algoritmo faz?
 
-> R: O algoritmo soma os valores do array, de forma que a soma fique armazenada na variável x.
+> R: O algoritmo calcula a média aritmética dos valores do array.
 > Cada vez que o laço é executado, a variável x recebe o valor do array no index em que está o loop e soma com o valor armazenado nele mesmo.
-> Após a execução do laço completamente, x terá como valor 25.4.
+> Após a execução do laço completamente, x terá como valor 25.4, que é a soma de todas as variavéis armazenadas no array.
 > Ao fim, o algoritmo imprime a divisão de x pelo tamanho do array, que é 4.
-> 25.4 / 4 = 6.35.
+> 25.4 / 4 = 6.35. 
 > Portanto, pode-se afirmar que esse é um algoritmo que calcula a média aritmética dos valores de um array;
 
+## 3. Estrutura de dados: (1,5)
+
+### a. É correto afirmar que: No acesso a registros em um arquivo sequencial, todos os registros são percorridos desde o início até que se encontre o registro desejado? Justifique a sua resposta. 
+
+> A afirmativa está correta. É comum associar os arquivos sequenciais a fitas magnéticas, onde um registro é armazenado ou lido, um após o outro, como na fita. 
+> Portanto, ao realizar por exemplo uma busca, é necessário acessar sequencialmente as informações até que se encontre aquela que deseja-se obter.
+
+### b. É correto afirmar que: As filas são estruturas com base no princípio LIFO (last in, first out), no qual os dados que forem inseridos primeiro na fila serão os últimos a serem removidos.
+
+> A afirmativa está incorreta. As filas são estruturas de dados que recebem e removem elementos obedecendo a regra de o primeiro elemento a ser inserido na fila será o primeiro a ser removido. Essa regra é conhecida como FIFO (First in, first out). Portato, esse item está errado.
+
+### c. Uma das formas mais simples e rápidas de busca em uma estrutura de dados ordenada é o método da pesquisa binária, que segue o paradigma da divisão e conquista. Essa afirmação está correta? Justifique sua resposta.
+
+> A afirmação está correta. Suponha que o item que deseja ser obtido esteja no meio da estrutura, a busca já será feita com sucesso (melhor caso). Caso contrário, se o elemento for menor que o item do meio da estrutura, a busca continuará na metade anterior, e se for maior, a busca continuará na metade posterior da estrutura.
+
+## 4. O Modelo Entidade Relacionamento (MER) é um modelo conceitual usado para descrever os objetos (entidades) envolvidos em domínios de negócio, com suas características (atributos) e como elas se relacionam entre si (relacionamento). Observe o MER abaixo e responda as questões abaixo. (3,0)
+
+<p align="center">
+  <img alt="Direct Download" src="https://drive.google.com/file/d/1FQfHp6-pQHX0MnamLZD-dd_pjtr47hby/view" />
+</p>
 
 
