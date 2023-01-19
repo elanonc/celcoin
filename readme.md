@@ -227,9 +227,9 @@ SELECT * FROM PEDIDOS WHERE usuarioid in (
 
 <p>
 
-  Primeiramente, a tabela não possui exatamente uma entidade. A tabela possui atributos de 3 outras entidades que pode-se supor que existem nesse MER, que seriam Funcionário, Cargo e Projeto. Uma evidência da baixa qualidade dessa tabela é não há ID da tabela. Além de que também há atributos na tabela que não parecem ter relação com outros atributos presentes, como DataFim, que seria a data do fim do projeto, que não tem relação com o nome do cargo e portanto podem pertencer a tabelas separadas.
+  Primeiramente, a tabela não possui exatamente uma entidade. A tabela possui atributos de 3 outras entidades que pode-se supor que existem nesse MER, que seriam Funcionário, Cargo e Projeto. Uma evidência da baixa qualidade dessa tabela é que não há ID da tabela Além de que também há atributos na tabela que não parecem ter relação com outros atributos presentes, como DataFim, que seria a data do fim do projeto, que não tem relação com o nome do cargo e portanto podem pertencer a tabelas separadas.
 
-  Para melhorar isso, eu separei em 4 tabelas: Funcionário, Cargo, Projeto e Alocação. A tabela alocação possui chaves de cada tabela de forma que as conecta. O restante das tabelas possui apenas atributos que dizem a respeito das entidades.
+  Para melhorar isso, eu separei em 4 tabelas: Funcionário, Cargo, Projeto e Alocação. A tabela alocação possui chaves de cada tabela de forma que as conecta. O restante das tabelas possui apenas atributos que dizem respeito às entidades..
 
 </p>
 
