@@ -263,7 +263,7 @@ Tabela Projeto
 
 Tabela Alocacao
 
-alocacaoID | funcionarioID | | projetoID  | esforco |
+alocacaoID | funcionarioID | projetoID  | esforco |
 | :--- | :--- | :--- | :--- |
 | 1 | 1 | 1 | 3 |
 | 2 | 1 | 3 | 8 |
