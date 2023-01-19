@@ -198,5 +198,92 @@ public class Ordenacao
 
 ![image](https://drive.google.com/uc?export=view&id=1FQfHp6-pQHX0MnamLZD-dd_pjtr47hby)
 
+### a. Quais são as entidades apresentadas no MER acima?(0,5)
+
+> Produto, usuário, pedido e transação.
+
+### b. Os relacionamentos geralmente são nomeados com verbos ou expressões que representam a forma como as entidades interagem, ou a ação que uma exerce sobre a outra. Essa nomenclatura pode variar de acordo com a direção em que se lê o relacionamento. Por exemplo: Um aluno cursa várias disciplinas, enquanto uma disciplina é cursada por, pelo menos, um aluno.  Como se dá o relacionamento entre as entidades apresentadas no modelo acima de acordo com a quantidade de objetos envolvidos de cada lado do relacionamento? (1,0)
+
+* Usuário realiza um pedido, enquanto um pedido é realizado por um usuário;
+* Um pedido solicita um produto, enquanto um produto é solicitado por um ou mais pedidos;
+* Um pedido faz uma transação, enquanto uma transação é feita em um ou mais pedidos;
+	
+> Todos esses relacionamentos são binários.
+
+### c. Faça o comando SQL para inserir um novo usuário com as suas informações. (0,5)
+
+````SQL
+INSERT INTO USUARIO VALUES(1, 'ELANO NUNES CAITANO', 'nunes.elano14@gmail.com', 18/01/2023);
+````
+
+### d. Faça uma query em SQL para selecionar todos os pedidos um usuário cujo email seja igual ao seu.(1,0)
+
+````SQL
+SELECT * FROM PEDIDOS WHERE usuarioid in (
+	SELECT usuarioid FROM USUARIO WHERE email='nunes.elano14@gmail.com'
+);
+````
+
+## 5. Observe a tabela abaixo e indique os problemas existentes no projeto dessa tabela e faça um Modelo Entidade Relacionamento que apresente as correções necessárias. (1,5) 
+
+![image](https://drive.google.com/uc?export=view&id=16dTnawipFH6_yRxm_NsO4-ip4jRq3LYc)
+
+<p>
+  O primeiro problema evidente é que essa tabela não representa nenhuma entidade efetivamente, mas aparece como uma combinação de 3 entidades que podem ser observadas, sendo elas: Funcionário, Cargo e Projeto. 
+  
+  Isso pode ser afirmado devido aos atributos que são específicos de uma entidade, mas que não tem relação com outra entidade. Por exemplo a “dataFim”, que seria a data do final do projeto, não tem relacionamento com nome do funcionário, sendo assim, poderia ficar em uma tabela separada.
+</p>
+
+
+Tabela Funcionário
+
+| funcionarioID | cargoID  | nomeFuncionario |
+| :--- | :--- | :--- |
+| 1 | 1 | Malon |
+| 22 | 1 | Marcos |
+| 32 | 2 | José |
+| 36 | 3 | Henrique |
+
+Tabela Cargo
+
+| cargoID | nomeCargo  |
+| :--- | :--- | :--- |
+| 1 | Programador |
+| 2 | Analista |
+| 3 | UI/UX |
+
+Tabela Projeto
+
+| projetoID | dataFim  
+| :--- | :--- | 
+| 1 | 07/jul | 
+| 3 | 14/jul |
+| 8 | 14/jul |
+| 12 | 14/jul |
+
+Tabela Alocacao
+
+alocacaoID | funcionarioID | | projetoID  | esforco |
+| :--- | :--- | :--- | :--- |
+| 1 | 1 | 1 | 3 |
+| 2 | 1 | 3 | 8 |
+| 3 | 22 | 1 | 13 |
+| 4 | 22 | 8 | 5 |
+| 4 | 22 | 12 | 3 |
+| 4 | 32 | 1 | 1 |
+| 4 | 32 | 12 | 5 |
+| 4 | 36 | 1 | 8 |
+
+
+DER
+
+![image](https://drive.google.com/uc?export=view&id=1YJ4kN6VPptY8gsd-33muLLrgYJ2aW0KR)
+
+Relacionamentos nesse MER:
+
+* Um Funcionario tem Alocação
+* Alocação é feita um Projeto
+* Um cargo pertence a um Funcionario
+
 
 
